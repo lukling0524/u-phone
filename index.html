@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>민병철유폰 | 수강신청</title>
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/common.css">
+    <link rel="stylesheet" href="styles/css/order.css">
+    <!-- <script src="js/radio-box.js" defer></script> -->
+    <script src="js/jquery-1.8.1.min.js" defer></script>
+    <script src="js/jq-radio-box.js" defer></script>
+    <script src="js/jq-invoice.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__contents logo">
+                <a href="#" class="logo__link">
+                    <img src="images/common/logo_01.png" alt="민병철유폰 로고">
+                </a>
+            </div>
+            <nav class="header__contents nav">
+                <ul class="gnb list-ul">
+                    <li class="gnb__list list-li"><a href="#" class="gnb__link list-a">레벨테스트</a></li>
+                    <li class="gnb__list list-li"><a href="#" class="gnb__link list-a">과정소개</a></li>
+                    <li class="gnb__list list-li"><a href="#" class="gnb__link list-a">수강신청</a></li>
+                    <li class="gnb__list list-li"><a href="#" class="gnb__link list-a">유폰B2B</a></li>
+                    <li class="gnb__list list-li"><a href="#" class="gnb__link list-a">채용</a></li>
+                </ul>
+            </nav>
+            <div class="header__contents login-area">
+                <ul class="login-area__wrap list-ul">
+                    <li class="login-area__list list-li"><a href="#" class="btn-header list-a">레벨 결과
+                            확인</a>
+                    </li>
+                    <li class="login-area__list list-li"><a href="#"
+                            class="btn-login btn-header list-a">회원가입&middot;로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <a href="#" class="header-banner__link"><img src="images/common/banner_order_pc_.png"
+                alt="선착순 500명, 6&middot;12개월 수강하면 왓챠플레이 무료"></a>
+    </div>
+    <main>
+        <div class="info">
+            <div class="con-box lectures">
+                <h2 class="con-box__title">학습과정</h2>
+                <form class="lectures__category">
+                    <label for="basic" class="label">
+                        <input type="radio" id="basic" class="radio-input" name="lectures-title" value="기본과정" checked>
+                        <div class="btn">
+                            <strong class="btn__text">기본과정</strong>
+                        </div>
+                    </label>
+                    <label for="beginner" class="label">
+                        <input type="radio" id="beginner" class="radio-input" name="lectures-title" value="기초다지기">
+                        <div class="btn">
+                            <strong class="btn__text">기초다지기</strong>
+                        </div>
+                    </label>
+                    <label for="normal" class="label">
+                        <input type="radio" id="normal" class="radio-input" name="lectures-title" value="정규회화">
+                        <div class="btn">
+                            <strong class="btn__text">정규회화</strong>
+                        </div>
+                    </label>
+                    <label for="free-talking" class="label">
+                        <input type="radio" id="free-talking" class="radio-input" name="lectures-title" value="프리토킹">
+                        <div class="btn no-margin-right">
+                            <strong class="btn__text">프리토킹</strong>
+                        </div>
+                    </label>
+                    <label for="news" class="label">
+                        <input type="radio" id="news" class="radio-input" name="lectures-title" value="뉴스미디어">
+                        <div class="btn">
+                            <strong class="btn__text">뉴스미디어</strong>
+                        </div>
+                    </label>
+                    <label for="business" class="label">
+                        <input type="radio" id="business" class="radio-input" name="lectures-title" value="비즈니스">
+                        <div class="btn">
+                            <strong class="btn__text">비즈니스</strong>
+                        </div>
+                    </label>
+                    <label for="goal" class="label">
+                        <input type="radio" id="goal" class="radio-input" name="lectures-title" value="목표달성">
+                        <div class="btn">
+                            <strong class="btn__text">목표달성</strong>
+                        </div>
+                    </label>
+                    <label for="trip" class="label">
+                        <input type="radio" id="trip" class="radio-input" name="lectures-title" value="여행영어">
+                        <div class="btn no-margin-right">
+                            <strong class="btn__text">여행영어</strong>
+                        </div>
+                    </label>
+                </form>
+                <!-- //학습과정 타이틀 -->
+                <div class="pannel">
+                    <form class="pannel__wrap">
+                        <div class="pannel__contents">
+                            <div class="basic pannel__box">
+                                <label for="basic-level" class="pannel-label label">
+                                    <input type="radio" id="basic-level" class="basic level-title" name="level-title"
+                                        value="정규회화" checked>
+                                    <div class="btn-basic btn">
+                                        <strong class="btn__text">기본과정</strong>
+                                        <div class="btn-basic__text">
+                                            <p>유폰 인기 과정 <span>정규회화 5~6</span>으로 수업을 시작합니다.</p>
+                                            <p>수강신청 후 37개의 모든 과정을 언제든지 변경해 수업할 수 있습니다.</p>
+                                            <span class="btn__level">Level 5~6</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //기본과정 -->
+                        <div class="pannel__contents">
+                            <div class="beginner pannel__box">
+                                <label for="beginner-speaking" class="label">
+                                    <input type="radio" id="beginner-speaking" class="beginner level-title"
+                                        name="level-title" value="기초회화">
+                                    <div class="btn">
+                                        <strong class="btn__text">기초회화</strong>
+                                        <span class="btn__level">Level 0</span>
+                                    </div>
+                                </label>
+                                <label for="beginner-verb" class="label">
+                                    <input type="radio" id="beginner-verb" class="beginner-verb level-title"
+                                        name="level-title" value="기초동사">
+                                    <div class="btn">
+                                        <strong class="btn__text">기초동사</strong>
+                                        <span class="btn__level">Level 1~4</span>
+                                    </div>
+                                </label>
+                                <label for="beginner-grammar" class="label">
+                                    <input type="radio" id="beginner-grammar" class="beginner-grammar level-title"
+                                        name="level-title" value="기초문법">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">기초문법</strong>
+                                        <span class="btn__level">Level 1~4</span>
+                                    </div>
+                                </label>
+                                <label for="beginner-expression" class="label">
+                                    <input type="radio" id="beginner-expression" class="beginner-expression level-title"
+                                        name="level-title" value="기초표현">
+                                    <div class="btn">
+                                        <strong class="btn__text">기초표현</strong>
+                                        <span class="btn__level">Level 1~4</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //기초다지기 -->
+                        <div class="pannel__contents">
+                            <div class="normal pannel__box">
+                                <label for="normal-speaking-1" class="label">
+                                    <input type="radio" id="normal-speaking-1" class="normal level-title"
+                                        name="level-title" value="정규회화">
+                                    <div class="btn">
+                                        <strong class="btn__text">정규회화</strong>
+                                        <spa class="btn__level">Level 1~2</spa>
+                                    </div>
+                                </label>
+                                <label for="normal-speaking-3" class="label">
+                                    <input type="radio" id="normal-speaking-3" class="normal-3 level-title"
+                                        name="level-title" value="정규회화">
+                                    <div class="btn">
+                                        <strong class="btn__text">정규회화</strong>
+                                        <span class="btn__level">Level 3~4</span>
+                                    </div>
+                                </label>
+                                <label for="normal-speaking-5" class="label">
+                                    <input type="radio" id="normal-speaking-5" class="normal-5 level-title"
+                                        name="level-title" value="정규회화">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">정규회화</strong>
+                                        <span class="btn__level">Level 5~6</span>
+                                    </div>
+                                </label>
+                                <label for="normal-speaking-7" class="label">
+                                    <input type="radio" id="normal-speaking-7" class="normal-7 level-title"
+                                        name="level-title" value="정규회화">
+                                    <div class="btn">
+                                        <strong class="btn__text">정규회화</strong>
+                                        <span class="btn__level">Level 7~8</span>
+                                    </div>
+                                </label>
+                                <label for="normal-speaking-9" class="label">
+                                    <input type="radio" id="normal-speaking-9" class="normal-9 level-title"
+                                        name="level-title" value="정규회화">
+                                    <div class="btn">
+                                        <strong class="btn__text">정규회화</strong>
+                                        <span class="btn__level">Level 9~10</span>
+                                    </div>
+                                </label>
+                                <label for="normal-speaking-11" class="label">
+                                    <input type="radio" id="normal-speaking-11" class="normal-11 level-title"
+                                        name="level-title" value="정규회화">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">정규회화</strong>
+                                        <span class="btn__level">Level 11~12</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //정규회화 -->
+                        <div class="pannel__contents">
+                            <div class="free-talking pannel__box">
+                                <label for="free-talking-7" class="label">
+                                    <input type="radio" id="free-talking-7" class="free-talking-7 level-title"
+                                        name="level-title" value="토픽">
+                                    <div class="btn">
+                                        <strong class="btn__text">토픽</strong>
+                                        <span class="btn__level">Level 7~8</span>
+                                    </div>
+                                </label>
+                                <label for="free-talking-9" class="label">
+                                    <input type="radio" id="free-talking-9" class="free-talking-9 level-title"
+                                        name="level-title" value="토픽">
+                                    <div class="btn">
+                                        <strong class="btn__text">토픽</strong>
+                                        <span class="btn__level">Level 9~10</span>
+                                    </div>
+                                </label>
+                                <label for="free-talking-11" class="label">
+                                    <input type="radio" id="free-talking-11" class="free-talking-11 level-title"
+                                        name="level-title" value="토론">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">토론</strong>
+                                        <span class="btn__level">Level 11~12</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //프리토킹 -->
+                        <div class="pannel__contents">
+                            <div class="news pannel__box">
+                                <label for="news-newspaper" class="label">
+                                    <input type="radio" id="news-newspaper" class="news-newspaper level-title"
+                                        name="level-title" value="영자신문">
+                                    <div class="btn">
+                                        <strong class="btn__text">영자신문</strong>
+                                        <span class="btn__level">Level 5~12</span>
+                                    </div>
+                                </label>
+                                <label for="news-media-1" class="label">
+                                    <input type="radio" id="news-media-1" class="news-media-1 level-title"
+                                        name="level-title" value="미디어 잉글리쉬">
+                                    <div class="btn">
+                                        <strong class="btn__text">미디어 잉글리쉬</strong>
+                                        <span class="btn__level">Level 1~4</span>
+                                    </div>
+                                </label>
+                                <label for="news-media-5" class="label">
+                                    <input type="radio" id="news-media-5" class="news-media-5 level-title"
+                                        name="level-title" value="미디어 잉글리쉬">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">미디어 잉글리쉬</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                                <label for="news-media-9" class="label">
+                                    <input type="radio" id="news-media-9" class="news-media-9 level-title"
+                                        name="level-title" value="미디어 잉글리쉬">
+                                    <div class="btn">
+                                        <strong class="btn__text">미디어 잉글리쉬</strong>
+                                        <span class="btn__level">Level 9~12</span>
+                                    </div>
+                                </label>
+                                <label for="news-animal" class="label">
+                                    <input type="radio" id="news-animal" class="news-animal level-title"
+                                        name="level-title" value="추억의 동화 동물편">
+                                    <div class="btn">
+                                        <strong class="btn__text">추억의 동화 동물편</strong>
+                                        <span class="btn__level">Level 3~4</span>
+                                    </div>
+                                </label>
+                                <label for="news-people" class="label">
+                                    <input type="radio" id="news-people" class="news-people level-title"
+                                        name="level-title" value="추억의 동화 인물편">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">추억의 동화 인물편</strong>
+                                        <span class="btn__level">Level 3~4</span>
+                                    </div>
+                                </label>
+                                <label for="news-celebrity" class="label">
+                                    <input type="radio" id="news-celebrity" class="news-celebrity level-title"
+                                        name="level-title" value="셀럽이야기">
+                                    <div class="btn">
+                                        <strong class="btn__text">셀럽이야기</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //뉴스미디어 -->
+                        <div class="pannel__contents">
+                            <div class="business pannel__box">
+                                <label for="business-interview" class="label">
+                                    <input type="radio" id="business-interview" class="business-interview level-title"
+                                        name="level-title" value="영어면접 첫걸음">
+                                    <div class="btn">
+                                        <strong class="btn__text">영어면접 첫걸음</strong>
+                                        <span class="btn__level">Level 3~6</span>
+                                    </div>
+                                </label>
+                                <label for="business-tip" class="label">
+                                    <input type="radio" id="business-tip" class="business-tip level-title"
+                                        name="level-title" value="직장생활 꿀팁">
+                                    <div class="btn">
+                                        <strong class="btn__text">직장생활 꿀팁</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                                <label for="business-call-5" class="label">
+                                    <input type="radio" id="business-call-5" class="business-call-5 level-title"
+                                        name="level-title" value="비즈니스 전화">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">비즈니스 전화</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                                <label for="business-call-7" class="label">
+                                    <input type="radio" id="business-call-7" class="business-call-7 level-title"
+                                        name="level-title" value="비즈니스 전화">
+                                    <div class="btn">
+                                        <strong class="btn__text">비즈니스 전화</strong>
+                                        <span class="btn__level">Level 7~10</span>
+                                    </div>
+                                </label>
+                                <label for="business-email-5" class="label">
+                                    <input type="radio" id="business-email-5" class="business-email-5 level-title"
+                                        name="level-title" value="비즈니스 이메일">
+                                    <div class="btn">
+                                        <strong class="btn__text">비즈니스 이메일</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                                <label for="business-email-7" class="label">
+                                    <input type="radio" id="business-email-7" class="business-email-7 level-title"
+                                        name="level-title" value="비즈니스 이메일">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">비즈니스 이메일</strong>
+                                        <span class="btn__level">Level 7~10</span>
+                                    </div>
+                                </label>
+                                <label for="business-meeting" class="label">
+                                    <input type="radio" id="business-meeting" class="business-meeting level-title"
+                                        name="level-title" value="비즈니스 미팅">
+                                    <div class="btn">
+                                        <strong class="btn__text">비즈니스 미팅</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                                <label for="business-pt" class="label">
+                                    <input type="radio" id="business-pt" class="business-pt level-title"
+                                        name="level-title" value="프레젠테이션">
+                                    <div class="btn">
+                                        <strong class="btn__text">프레젠테이션</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //비즈니스 -->
+                        <div class="pannel__contents">
+                            <div class="goal pannel__box">
+                                <label for="goal-working-holi" class="label">
+                                    <input type="radio" id="goal-working-holi" class="goal-working-holi level-title"
+                                        name="level-title" value="워킹홀리데이">
+                                    <div class="btn">
+                                        <strong class="btn__text">워킹홀리데이</strong>
+                                        <span class="btn__level">Level 5~6</span>
+                                    </div>
+                                </label>
+                                <label for="goal-study-abroad" class="label">
+                                    <input type="radio" id="goal-study-abroad" class="goal-study-abroad level-title"
+                                        name="level-title" value="어학연수">
+                                    <div class="btn">
+                                        <strong class="btn__text">어학연수</strong>
+                                        <span class="btn__level">Level 1~4</span>
+                                    </div>
+                                </label>
+                                <label for="goal-interview" class="label">
+                                    <input type="radio" id="goal-interview" class="goal-interview level-title"
+                                        name="level-title" value="인터뷰">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">인터뷰</strong>
+                                        <span class="btn__level">Level 5~12</span>
+                                    </div>
+                                </label>
+                                <label for="goal-toeic" class="label">
+                                    <input type="radio" id="goal-toeic" class="goal-toeic level-title"
+                                        name="level-title" value="토익스피킹">
+                                    <div class="btn">
+                                        <strong class="btn__text">토익스피킹</strong>
+                                        <span class="btn__level">Level 5~12</span>
+                                    </div>
+                                </label>
+                                <label for="goal-opic-1" class="label">
+                                    <input type="radio" id="goal-opic-1" class="goal-opic-1 level-title"
+                                        name="level-title" value="오픽 초급">
+                                    <div class="btn">
+                                        <strong class="btn__text">오픽 초급</strong>
+                                        <span class="btn__level">Level 1~4</span>
+                                    </div>
+                                </label>
+                                <label for="goal-opic-5" class="label">
+                                    <input type="radio" id="goal-opic-5" class="goal-opic-5 level-title"
+                                        name="level-title" value="오픽 중급">
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">오픽 중급</strong>
+                                        <span class="btn__level">Level 5~8</span>
+                                    </div>
+                                </label>
+                                <label for="goal-opic-9" class="label">
+                                    <input type="radio" id="goal-opic-9" class="goal-opic-9 level-title"
+                                        name="level-title" value="오픽 고급">
+                                    <div class="btn">
+                                        <strong class="btn__text">오픽 고급</strong>
+                                        <span class="btn__level">Level 9~12</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //목표달성 -->
+                        <div class="pannel__contents">
+                            <div class="trip pannel__box">
+                                <label for="trip-3" class="label">
+                                    <input type="radio" id="trip-3" class="trip-3 level-title" name="level-title"
+                                        value="여행영어">
+                                    <div class="btn">
+                                        <strong class="btn__text">여행영어</strong>
+                                        <span class="btn__level">Level 3~4</span>
+                                    </div>
+                                </label>
+                                <label for="trip-5" class="label">
+                                    <input type="radio" id="trip-5" class="trip-5 level-title" name="level-title"
+                                        value="여행영어">
+                                    <div class="btn">
+                                        <strong class="btn__text">여행영어</strong>
+                                        <span class="btn__level">Level 5~6</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //여행영어 -->
+                    </form>
+                </div>
+                <!-- //학습과정 서브 -->
+            </div>
+            <!-- //학습과정 -->
+            <div class="con-box term">
+                <h2 class="con-box__title">수강기간</h2>
+                <form class="term__category">
+                    <label for="min-10" class="label">
+                        <input type="radio" id="min-10" class="radio-input" name="term-title" value="평일 10분" checked>
+                        <div class="btn">
+                            <strong class="btn__text">평일 10분</strong>
+                        </div>
+                    </label>
+                    <label for="min-20" class="label">
+                        <input type="radio" id="min-20" class="radio-input" name="term-title" value="평일 20분">
+                        <div class="btn-large btn">
+                            <span class="best">Best</span>
+                            <strong class="btn__text">평일 20분</strong>
+                        </div>
+                    </label>
+                    <label for="min-20__weekend" class="label">
+                        <input type="radio" id="min-20__weekend" class="radio-input" name="term-title" value="주말 20분">
+                        <div class="btn no-margin-right">
+                            <strong class="btn__text">주말 20분</strong>
+                        </div>
+                    </label>
+                </form>
+                <!-- //수강기간 타이틀 -->
+                <div class="pannel">
+                    <form class="pannel__wrap">
+                        <div class="pannel__contents">
+                            <div class="min-10 pannel__box">
+                                <label for="min-10-monthly" class="label">
+                                    <input type="radio" id="min-10-monthly" class="month-title" name="month-title"
+                                        value="1개월">
+                                    <div class="btn">
+                                        <strong class="btn__text">1개월 정기</strong>
+                                        <span class="btn__discount">10% 할인</span>
+                                    </div>
+                                </label>
+                                <label for="min-10-month-3" class="label">
+                                    <input type="radio" id="min-10-month-3" class="month-title" name="month-title"
+                                        value="3개월">
+                                    <div class="btn">
+                                        <strong class="btn__text">3개월</strong>
+                                        <span class="btn__discount">15% 할인</span>
+                                    </div>
+                                </label>
+                                <label for="min-10-month-6" class="label">
+                                    <input type="radio" id="min-10-month-6" class="month-title" name="month-title"
+                                        value="6개월">
+                                    <div class="btn">
+                                        <span class="best">Best</span>
+                                        <strong class="btn__text">6개월</strong>
+                                        <span class="btn__discount">30% 할인</span>
+                                    </div>
+                                </label>
+                                <label for="min-10-month-12" class="label">
+                                    <input type="radio" id="min-10-month-12" class="month-title" name="month-title"
+                                        value="12개월" checked>
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">12개월</strong>
+                                        <span class="btn__discount">40% 할인</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //평일10분 -->
+                        <div class="pannel__contents">
+                            <div class="min-20 pannel__box">
+                                <label for="min-20-monthly" class="label">
+                                    <input type="radio" id="min-20-monthly" class="month-title" name="month-title"
+                                        value="1개월">
+                                    <div class="btn">
+                                        <strong class="btn__text">1개월 정기</strong>
+                                        <span class="btn__discount">25% 할인</span>
+                                    </div>
+                                </label>
+                                <label for="min-20-month-3" class="label">
+                                    <input type="radio" id="min-20-month-3" class="month-title" name="month-title"
+                                        value="3개월">
+                                    <div class="btn">
+                                        <strong class="btn__text">3개월</strong>
+                                        <span class="btn__discount">30% 할인</span>
+                                    </div>
+                                </label>
+                                <label for="min-20-month-6" class="label">
+                                    <input type="radio" id="min-20-month-6" class="month-title" name="month-title"
+                                        value="6개월">
+                                    <div class="btn">
+                                        <span class="best">Best</span>
+                                        <strong class="btn__text">6개월</strong>
+                                        <span class="btn__discount">40% 할인</span>
+                                    </div>
+                                </label>
+                                <label for="min-20-month-12" class="label">
+                                    <input type="radio" id="min-20-month-12" class="month-title" name="month-title"
+                                        value="12개월" checked>
+                                    <div class="btn no-margin-right">
+                                        <strong class="btn__text">12개월</strong>
+                                        <span class="btn__discount">50% 할인</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //평일20분 -->
+                        <div class="pannel__contents">
+                            <div class="min-20__weekend pannel__box">
+                                <label for="min-20__weekend-monthly" class="label">
+                                    <input type="radio" id="min-20__weekend-monthly" class="month-title"
+                                        name="month-title" value="1개월">
+                                    <div class="btn btn-long">
+                                        <div class="btn__box">
+                                            <strong class="btn__text">1개월 정기</strong>
+                                            <span class="btn__discount">15% 할인</span>
+                                        </div>
+                                        <p class="btn__price">월<span class="price">156,400</span>원</p>
+                                    </div>
+                                </label>
+                                <label for="min-20__weekend-month-3" class="label">
+                                    <input type="radio" id="min-20__weekend-month-3" class="month-title"
+                                        name="month-title" value="3개월">
+                                    <div class="btn btn-long">
+                                        <div class="btn__box">
+                                            <strong class="btn__text">3개월</strong>
+                                            <span class="btn__discount">25% 할인</span>
+                                        </div>
+                                        <p class="btn__price">월<span class="price">138,000</span>원</p>
+                                    </div>
+                                </label>
+                                <label for="min-20__weekend-month-6" class="label">
+                                    <input type="radio" id="min-20__weekend-month-6" class="month-title"
+                                        name="month-title" value="6개월">
+                                    <div class="btn btn-long">
+                                        <div class="btn__box">
+                                            <span class="best">Best</span>
+                                            <strong class="btn__text">6개월</strong>
+                                            <span class="btn__discount">35% 할인</span>
+                                        </div>
+                                        <p class="btn__price">월<span class="price">119,600</span>원</p>
+                                    </div>
+                                </label>
+                                <label for="min-20__weekend-month-12" class="label">
+                                    <input type="radio" id="min-20__weekend-month-12" class="month-title"
+                                        name="month-title" value="12개월" checked>
+                                    <div class="btn btn-long no-margin-right">
+                                        <div class="btn__box">
+                                            <strong class="btn__text">12개월</strong>
+                                            <span class="btn__discount">45% 할인</span>
+                                        </div>
+                                        <p class="btn__price">월<span class="price">101,200</span>원</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- //주말20분 -->
+                    </form>
+                </div>
+                <!-- //수강기간 서브 -->
+            </div>
+            <!-- //수강기간 -->
+            <div class="con-box">
+                <h2 class="con-box__title">수업 횟수&middot;타임존</h2>
+                <form class="time-zone">
+                    <div class="time-zone__container">
+                        <div class="time-zone__table">
+                            <div class="time-zone__text">
+                                <strong class="time-zone__title">열공A존</strong>
+                                <span class="time-zone__hour">06:00~08:50</span>
+                                <span class="time-zone__hour">20:00~23:50</span>
+                            </div>
+                            <div class="time-zone__select">
+                                <div class="time-zone-a">
+                                    <label for="time-zone-a-2" class="label">
+                                        <input type="radio" id="time-zone-a-2" class="radio-input"
+                                            name="time-zone-title" value="주 2회&#40;화/목&#41;">
+                                        <div class="btn btn-top">
+                                            <p class="btn__text">주 2회</p>
+                                            <p class="btn__price">월<strong class="price">55,200</strong>원</p>
+                                        </div>
+                                    </label>
+                                    <label for="time-zone-a-3" class="label">
+                                        <input type="radio" id="time-zone-a-3" class="radio-input"
+                                            name="time-zone-title" value="주 3회&#40;월/수/금&#41;">
+                                        <div class="btn btn-middle">
+                                            <p class="btn__text">주 3회</p>
+                                            <p class="btn__price">월<strong class="price">61,200</strong>원</p>
+                                        </div>
+                                    </label>
+                                    <label for="time-zone-a-5" class="label">
+                                        <input type="radio" id="time-zone-a-5" class="radio-input"
+                                            name="time-zone-title" value="주 5회&#40;월~금&#41;">
+                                        <div class="btn btn-bottom">
+                                            <p class="btn__text">주 5회</p>
+                                            <p class="btn__price">월<strong class="price">79,200</strong>원</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time-zone__table">
+                            <div class="time-zone__text">
+                                <strong class="time-zone__title">실속B존</strong>
+                                <span class="time-zone__hour">09:00~12:50</span>
+                                <span class="time-zone__hour">17:00~19:50</span>
+                            </div>
+                            <div class="time-zone__select">
+                                <div class="time-zone-b">
+                                    <label for="time-zone-b-2" class="label">
+                                        <input type="radio" id="time-zone-b-2" class="radio-input"
+                                            name="time-zone-title" value="주 2회&#40;화/목&#41;">
+                                        <div class="btn btn-top">
+                                            <p class="btn__text">주 2회</p>
+                                            <p class="btn__price">월<strong class="price">49,200</strong>원</p>
+                                        </div>
+                                    </label>
+                                    <label for="time-zone-b-3" class="label">
+                                        <input type="radio" id="time-zone-b-3" class="radio-input"
+                                            name="time-zone-title" value="주 3회&#40;월/수/금&#41;">
+                                        <div class="btn btn-middle">
+                                            <p class="btn__text">주 3회</p>
+                                            <p class="btn__price">월<strong class="price">55,200</strong>원</p>
+                                        </div>
+                                    </label>
+                                    <label for="time-zone-b-5" class="label">
+                                        <input type="radio" id="time-zone-b-5" class="radio-input"
+                                            name="time-zone-title" value="주 5회&#40;월~금&#41;">
+                                        <div class="btn btn-bottom">
+                                            <p class="btn__text">주 5회</p>
+                                            <p class="btn__price">월<strong class="price">73,200</strong>원</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time-zone__table">
+                            <div class="time-zone__text">
+                                <strong class="time-zone__title">알뜰C존</strong>
+                                <span class="time-zone__hour">13:00~16:50</span>
+                                <span class="time-zone__hour">&nbsp;</span>
+                            </div>
+                            <div class="time-zone__select">
+                                <div class="time-zone-c">
+                                    <label for="time-zone-c-2" class="label">
+                                        <input type="radio" id="time-zone-c-2" class="radio-input"
+                                            name="time-zone-title" value="주 2회&#40;화/목&#41;">
+                                        <div class="btn btn-top">
+                                            <p class="btn__text">주 2회</p>
+                                            <p class="btn__price">월<strong class="price">45,600</strong>원</p>
+                                        </div>
+                                    </label>
+                                    <label for="time-zone-c-3" class="label">
+                                        <input type="radio" id="time-zone-c-3" class="radio-input"
+                                            name="time-zone-title" value="주 3회&#40;월/수/금&#41;">
+                                        <div class="btn btn-middle">
+                                            <p class="btn__text">주 3회</p>
+                                            <p class="btn__price">월<strong class="price">51,600</strong>원</p>
+                                        </div>
+                                    </label>
+                                    <label for="time-zone-c-5" class="label">
+                                        <input type="radio" id="time-zone-c-5" class="radio-input"
+                                            name="time-zone-title" value="주 5회&#40;월~금&#41;">
+                                        <div class="btn btn-bottom">
+                                            <p class="btn__text">주 5회</p>
+                                            <p class="btn__price">월<strong class="price">69,600</strong>원</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-zone__unlimited">
+                        <div>
+                            <label for="time-zone-unlimited" class="label">
+                                <input type="radio" id="time-zone-unlimited" class="radio-input" name="time-zone-title"
+                                    value="무제한">
+                                <div class="btn btn-large">
+                                    <p class="btn__price"><strong>무제한수업</strong> : 월<strong
+                                            class="price">45,600</strong>원</p>
+                                    <p class="btn__text">횟수 제한없이 평일 06~24시 사이 직접 수업 예약</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+            <!-- //수업횟수, 타임존 -->
+            <div class="con-box class-hour">
+                <h2 class="con-box__title">수업 시간&middot;시작일</h2>
+            </div>
+            <!-- //수업 시간, 시작일 -->
+            <div class="con-box">
+                <h2 class="con-box__title">추가 할인</h2>
+                <form class="coupon">
+                    <label for="coupon-number" class="coupon__label">
+                        <input type="text" id="coupon-number" class="coupon__input" name="coupon-number"
+                            placeholder="할인쿠폰&middot;수강상품권 입력">
+                        <a class="coupon__submit">등록</a>
+                    </label>
+                </form>
+            </div>
+            <!-- //추가 할인 -->
+            <div class="con-box">
+                <h2 class="con-box__title">결제 수단</h2>
+                <div class="payment">
+                    <form class="payment__wrap">
+                        <label for="credit-card" class="label">
+                            <input type="radio" id="credit-card" ccredit-cardlass="radio-input" name="lectures-title"
+                                value="신용/체크카드" checked>
+                            <div class="btn">
+                                <strong class="btn__text">신용/체크카드</strong>
+                            </div>
+                        </label>
+                        <label for="n-pay" class="label">
+                            <input type="radio" id="n-pay" class="radio-input" name="lectures-title" value="네이버페이">
+                            <div class="btn">
+                                <img class="n-pay" src="images/common/npay.png" alt="네이버페이">
+                                <strong class="btn__text">네이버페이</strong>
+                            </div>
+                        </label>
+                        <label for="transfer" class="label">
+                            <input type="radio" id="transfer" class="radio-input" name="lectures-title"
+                                value="실시간 계좌이체">
+                            <div class="btn">
+                                <strong class="btn__text">실시간 계좌이체</strong>
+                            </div>
+                        </label>
+                        <label for="deposit" class="label">
+                            <input type="radio" id="deposit" class="radio-input" name="lectures-title" value="무통장입금">
+                            <div class="btn no-margin-right">
+                                <strong class="btn__text">무통장입금</strong>
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <!-- //결제 수단 -->
+
+        </div>
+        <!-- //수강신청 -->
+        <div class="invoice">
+            <h2 class="con-box__title">결제정보</h2>
+            <div class="invoice__header">
+                <img src="images/lectures/img_card_06.png" alt="배경이미지">
+                <strong class="invoice__title js-title">정규회화</strong>
+                <p class="invoice__level js-level">Level 5~6</p>
+            </div>
+            <div class="invoice__contents">
+                <div class="invoice__term">
+                    <div class="invoice__wrap border-bottom">
+                        <p class="contents__left">수업기간&middot;횟수</p>
+                        <p class="contents__right js-count"></p>
+                        <p class="contents__right js-month">12개월</p>
+                    </div>
+                    <div class="invoice__wrap">
+                        <p class="contents__left">수업시간</p>
+                        <p class="contents__right js-min">평일 10분</p>
+                    </div>
+                </div>
+                <div class="invoice__price">
+                    <div class="invoice__wrap border-bottom">
+                        <p class="contents__left">주문금액</p>
+                        <p class="contents__right js-original-price">0원</p>
+                    </div>
+                    <div class="invoice__wrap border-bottom">
+                        <p class="contents__left">총 할인금액</p>
+                        <p class="contents__right discount-amount js-discounted-price-minus">0원</p>
+                    </div>
+                    <div class="invoice__wrap discount-product">
+                        <p class="contents__left">상품할인</p>
+                        <p class="contents__right js-discounted-price">0원</p>
+                    </div>
+                    <div class="invoice__notice">
+                        <a href="#" class="invoice__notice--link">최대 12개월 무이자 할부 안내</a>
+                    </div>
+                    <div class="invoice__wrap invoice__payment">
+                        <p class="contents__left">실 결제금액</p>
+                        <p class="contents__right invoice__payment--result js-actual-price">0원</p>
+                    </div>
+                    <div class="invoice__wrap invoice__result">
+                        <p class="contents__right invoice__payment--result js-actual-price-per-month">0원</p>
+                    </div>
+                    <a href="#" class="invoice__submit">수강신청</a>
+                </div>
+            </div>
+        </div>
+        <!-- //결제정보 -->
+    </main>
+    <div class="bg-area"></div>
+    <div class="modal">
+        <div class="modal__wrap">
+            <div class="modal__left">
+                <div class="modal__head">
+                    <h3 class="modal__title">신규 회원 가입</h3>
+                </div>
+                <div class="modal__contents"></div>
+            </div>
+            <div class="modal__right"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__left">
+                <div class="policy">
+                    <ul class="policy__wrap">
+                        <li class="policy__list"><a href="#" class="policy__link">FQA</a></li>
+                        <li class="policy__list"><a href="#" class="policy__link">유폰B2B</a></li>
+                        <li class="policy__list"><a href="#" class="policy__link">채용</a></li>
+                        <li class="policy__list"><a href="#" class="policy__link">체험후기</a></li>
+                        <li class="policy__list"><a href="#" class="policy__link">이용악관</a></li>
+                        <li class="policy__list"><a href="#" class="policy__link">개인정보취급방침</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="copyright__list">Copyright &copy; &#40;주&#41; 민병철교육그룹. 모든 권리 보유. | 대표이사 : 민병철 | 전화번호 :
+                        1599-1791</p>
+                    <p class="copyright__list">
+                        사업자등록번호 220-81-12206 I 통신판매업신고번호 제 06837호 I 원격평생교육시설 121호
+                    </p>
+                    <p class="copyright__list">
+                        주소 : 서울 강남구 테헤란로 518, 11층
+                    </p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="contact">
+                    <p class="contact__left">학습컨설팅센터 <span class="contact__left-bussiness-hour">월~금 9시~7시</span></p>
+                    <img src="images/common/footerTel.png" alt="1599-1791" class="contact__right">
+                </div>
+                <div class="sample-test">
+                    <img src="images/common/foot_logo01.png" alt="study different" class="sample-test__left">
+                    <a href="#" class="sample-test__right">전화영어 무료체험하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

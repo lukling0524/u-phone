@@ -1,0 +1,44 @@
+// ====================
+// ====   mixin   =====
+// ====================
+
+@mixin display-table{
+    display: table;
+    table-layout: fixed;
+}
+
+@mixin middle-align{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin clearfix{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@mixin grey-background{
+    margin-top: 8px;
+    background: #fafafa;
+    border: 1px solid #f4f4f4;
+    border-radius: 6px;
+}
+
+
+// ====================
+// === style guide  ===
+// ====================
+
+//size
+
+$header-height: 50px;
+$header-banner-height: 70px;
+
+//color
+$font-color: #696d73;
+$focus-color: #3d8bf7;
+$btn-border: #e4e4e4;
+$red-color: #ff3646;
+
