@@ -1,9 +1,5 @@
 
-/*
-==================================================================
-=================               학습과정           =================
-==================================================================
-*/
+//학습과정
 $(document).ready(function () {
 
     var $lectures = $('.lectures'),
@@ -51,19 +47,15 @@ $(document).ready(function () {
 
 
 
-/*
-==================================================================
-=================               수강기간           =================
-==================================================================
-*/
+//수강기간
 $(document).ready(function () {
 
     var $term = $('.term'),
         $termTab = $term.find('input[name="term-title"]'),
         $checkedTab = $term.find('input[name="term-title"]:checked'),
         $marginTop = 14, // .pannel__box의 padding-top 값 + 2
-        $termPannel = $term.find('.pannel'),
-        $pannelBox = $termPannel.find('.pannel__box'),
+        $lecturesPannel = $term.find('.pannel'),
+        $pannelBox = $lecturesPannel.find('.pannel__box'),
         $boxHeight = $pannelBox.height();
 
 
@@ -72,21 +64,11 @@ $(document).ready(function () {
         $checkedTab = $term.find('input[name="term-title"]:checked');
 
         $currentTitle = $checkedTab.parents('.label').attr('for');
-        $currentPannel = $termPannel.find('div.' + $currentTitle);
+        $currentPannel = $lecturesPannel.find('div.' + $currentTitle);
         $pannelHeight = $currentPannel.height();
 
-        $pannelBox.hide();
-        $termPannel.css('height', $pannelHeight + $marginTop).find($currentPannel).show();
-        $pannelBox.removeClass('active');
-        $currentPannel.addClass('active');
-
-
-        //수강기간 - 주말20분 버튼 눌렀을 때 수업횟수/타임존 섹션 숨김
-        if ($('input[id="min-20__weekend"]').is(':checked')) {
-            $('.js-hide-time-zone').hide();
-        } else {
-            $('.js-hide-time-zone').show();
-        }
+        // $pannelBox.hide();
+        $lecturesPannel.css('height', $pannelHeight + $marginTop).find($currentPannel).fadeIn(100);
 
     });
 
@@ -95,43 +77,11 @@ $(document).ready(function () {
     //페이지 실행됐을때 가장 첫번째 판넬 보여지도록
     function pannelInit() {
         $pannelBox.eq(0).show();
-        $termPannel.height($boxHeight + $marginTop);
+        $lecturesPannel.height($boxHeight + $marginTop);
     }
 
 }); //수강기간 END
 
-
-
-
-
-
-
-
-/*
-==================================================================
-=================           수업횟수 / 타임존        =================
-==================================================================
-*/
-
-
-
-
-
-
-/*
-==================================================================
-=================               추가할인           =================
-==================================================================
-*/
-
-
-
-
-/*
-==================================================================
-=================               결제정보           =================
-==================================================================
-*/
 
 //결제정보 창 스크롤 내릴때 position fixed
 $(document).ready(function () {
@@ -147,7 +97,7 @@ $(document).ready(function () {
         // console.log('window scroll: ' + $(this).scrollTop());
 
         if ($(this).scrollTop() > $fixedStartOffset && $(this).scrollTop() < $fixedEndOffset) {
-            $invoice.css({ 'position': 'fixed' });
+            $invoice.css({ 'position': 'fixed', 'left': '50%', 'margin-left': 162 });
         } else {
             $invoice.css('position', '');
         }

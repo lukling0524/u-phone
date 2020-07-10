@@ -1,0 +1,203 @@
+@import "vars";
+
+/*
+==================================================================
+=================               common           =================
+==================================================================
+*/
+.list-ul{
+    @include display-table;
+}
+
+.list-li{
+    display: table-cell;
+    text-align: center;
+}
+
+.list-a{
+    display: block;
+    @include middle-align;
+}
+
+/*
+==================================================================
+=================               header           =================
+==================================================================
+*/
+
+
+.header{
+    width: 100%;
+    height: $header-height;
+    background-color: #1c1c1c;
+
+    &__wrap{
+        max-width: 1000px;
+        min-width: 980px;
+        margin: auto;
+
+        &::after{
+            @include clearfix;
+        }
+    }
+    &__contents{
+        height: $header-height;
+        float: left;
+    }
+}
+
+.logo{
+    width: 25%;
+
+    &__link{
+        width: 123px;
+        height: 26px;
+        display: block;
+        @include middle-align;
+    }
+}
+
+.nav{
+    width: 50%;
+}
+
+.gnb{
+    width: 100%;
+
+    &__list{
+        height: $header-height;
+    }
+    &__link{
+        color: #e8e8e8;
+        font-size: 15px;
+        letter-spacing: -0.4px;
+    }
+}
+
+.login-area{
+    width: 25%;
+    padding: 0px 20px;
+
+    &__wrap{
+        width: 100%;
+    }
+    &__list{
+        height: $header-height;
+
+        .btn{
+            &-header{
+                padding: 6px 10px;
+                color: #b7b7b7;
+                font-size: 13px;
+                letter-spacing: -0.8px;
+            }
+            &-login{
+                background-color: #3d3d3d;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.header-banner{
+    height: $header-banner-height;
+    background-color: #141414;
+
+    &__link{
+        width: 590px;
+        height: 25px;
+        display: block;
+        margin: auto;
+        @include middle-align;
+    }
+}
+
+
+
+/*
+==================================================================
+=================               footer           =================
+==================================================================
+*/
+
+.footer{
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    color: #8e8e8e;
+    font-size: 11px;
+    font-weight: 500;
+
+    &__wrap{
+        width: 964px;
+        margin: auto;
+        padding: 44px 0;
+
+        &::after{
+            @include clearfix;
+        }
+    }
+    &__left{
+        float: left;
+    }
+    &__right{
+        float: right;
+    }
+}
+
+.policy{
+    margin-bottom: 20px;
+
+    &__wrap::after{
+        @include clearfix;
+    }
+    &__list{
+        float: left;
+        padding-right: 30px;
+    }
+    &__link{
+        color: #8e8e8e;
+        letter-spacing: 1px;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.copyright__list{
+    color: #bebdbd;
+    font-weight: 200;
+    letter-spacing: .8px;
+}
+
+.contact{
+    margin-bottom: 40px;
+
+    &__left{
+        float: left;
+
+        &-bussiness-hour{
+            padding: 0 10px 0 4px;
+            font-weight: 400;
+        }
+    }
+    &__right{
+        float: right;
+        margin-top: -4px;
+    }
+    &:after{
+        @include clearfix;
+    }
+}
+
+.sample-test{
+    &__right{
+        display: inline-block;
+        margin: -4px 0 0 10px;
+        color: #ff3646;
+        font-size: 15px;
+        border-bottom: 1px solid #ff3646;
+    }
+}
+
+

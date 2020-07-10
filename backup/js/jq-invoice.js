@@ -7,6 +7,20 @@ $(document).ready(function () {
         $minTab = $('.term').find('input[name="term-title"]'),
         $monthTab = $('.term').find('input[name="month-title"]');
 
+    //학습과정 탭 클릭할때 결제정보창 이미지, 타이틀, 레벨 변경
+    $titleTab.on('click', function () {
+        changeInvoiceImg();
+        titleAndLevel();
+    });
+    $subTab.on('click', function () {
+        changeInvoiceImg();
+        titleAndLevel();
+    });
+
+
+
+
+
     var $invoice = $('.invoice'),
         $title = $invoice.find('.js-title'),
         $level = $invoice.find('.js-level'),
@@ -20,21 +34,6 @@ $(document).ready(function () {
         $pricePerMonth = $invoice.find('.js-actual-price-per-month');
 
 
-    /*
-    ==================================================================
-    =================               학습과정           =================
-    ==================================================================
-    */
-
-    //학습과정 탭 클릭할때 결제정보창 이미지, 타이틀, 레벨 변경
-    $titleTab.on('click', function () {
-        changeInvoiceImg();
-        titleAndLevel();
-    });
-    $subTab.on('click', function () {
-        changeInvoiceImg();
-        titleAndLevel();
-    });
 
     //학습과정 탭 클릭할때 결제정보창 타이틀과 레벨 변경
     function titleAndLevel() {
@@ -45,6 +44,10 @@ $(document).ready(function () {
         $title.text($currentTitle);
         $level.text($currentLevel);
     }
+
+
+
+
 
     //학습과정 탭 클릭할때 결제정보창 이미지 변경
     function changeInvoiceImg() {
@@ -223,53 +226,6 @@ $(document).ready(function () {
         }
 
     }
-
-    /*
-    ==================================================================
-    =================               수강기간           =================
-    ==================================================================
-    */
-
-    //수강기간 선택 탭
-    $minTab.on('click', function () {
-
-        termAndCount();
-
-        //수강기간- n분 버튼 누를때 이전에 선택된 n개월 버튼 유지
-        $monthTab = $('.term').find('input[name="month-title"]');
-        var i = $('.term .pannel__box').find('input[name="month-title"]:checked').parent().index();
-
-        $('.term .pannel__box.active .label:nth-of-type(' + (i + 1) + ')').find($monthTab).prop('checked', true);
-
-
-    });
-
-
-    $monthTab.on('click', function () {
-        termAndCount();
-    });
-
-
-
-    //수강기간 탭
-    function termAndCount() {
-
-        $minTab = $('.term').find('input[name="term-title"]:checked');
-        $monthTab = $('.term .pannel__box').find('input[name="month-title"]:checked');
-
-        $currentMin = $minTab.val();
-        $currentMonth = $monthTab.val();
-
-        $min.text($currentMin);
-        $month.text($currentMonth);
-    }
-
-
-
-
-
-
-
 
 }); //document END
 

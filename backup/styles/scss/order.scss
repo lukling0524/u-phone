@@ -79,8 +79,8 @@ input[type="radio"]{
 
     &__box{
         width: 560px;
-        position: absolute;
-        display: none;
+        // position: absolute;
+        // display: none;
         padding-top: 12px;
         left: 20px;
 
@@ -109,6 +109,11 @@ input[type="radio"]{
 
 
 .lectures{
+
+display: none;
+
+
+
 
     .btn{
         width: 140px;
@@ -473,13 +478,15 @@ input[type="radio"]{
 .invoice{
     width: 320px;
     position: absolute;
+    right: 20px;
     top: 60px;
-    margin-left: 720px;
     z-index: 10;
     overflow: hidden;
 
     &__header{
         height: 70px;
+        // background: url(../../images/lectures/img_card_06.png);
+        // padding: 17px 20px 13px;
         color: #fff;
     }
 
